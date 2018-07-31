@@ -1,0 +1,12 @@
+/target/
+/.settings/
+/.factorypath
+/.classpath
+*.iml
+*.ipr
+*.iws
+*.pyc
+.idea/
+target/
+*.real_output.txt
+lib
