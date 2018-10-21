@@ -29,7 +29,7 @@ def train():
         print('batch_per_epoch={b}'.format(b=epoch_batch_cnt))
 
         total_step = 0
-        for epoch in range(10):
+        for epoch in range(1000):
             print('epoch {e}'.format(e=epoch))
 
             for ii in range(epoch_batch_cnt + 1):
@@ -44,7 +44,7 @@ def train():
                     print('Nan loss!!')
                     return
 
-                if total_step % 20 == 0:
+                if total_step % 100 == 0:
                     model.save(sess, "data_assistant/model/", total_step)
                     print('Saved!')
 
